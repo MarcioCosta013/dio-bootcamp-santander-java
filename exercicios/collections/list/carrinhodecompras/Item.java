@@ -28,7 +28,7 @@ public class Item {
 
     @Override
     public String toString() {
-        return "nome=" + nome + ", preco=" + preco + ", quantidade=" + quantidade + "\n ";
+        return "nome=" + nome + ", preco=" + preco + ", quantidade=" + quantidade + "\n";
     }
 
     

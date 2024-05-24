@@ -52,9 +52,9 @@ public class CarrinhoDeCompras {
     public static void main(String[] args) {
         CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
 
-        carrinho.adicionarItem("urso", 8.00, 2);
-        carrinho.adicionarItem("pedra", 8.00, 3);
-        carrinho.adicionarItem("polar", 8.00, 1);
+        carrinho.adicionarItem("urso", 8.00, 1);
+        carrinho.adicionarItem("pedra", 10.00, 3);
+        carrinho.adicionarItem("polar", 9.00, 2);
 
         carrinho.exibirItens();
 
