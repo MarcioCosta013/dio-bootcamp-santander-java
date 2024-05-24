@@ -59,5 +59,9 @@ public class CarrinhoDeCompras {
         carrinho.exibirItens();
 
         System.out.println(carrinho.calcularValorTotal());
+
+        carrinho.removerItem("urso");
+
+        carrinho.exibirItens();
     }
 }
