@@ -13,6 +13,7 @@ public class ListaTerefas {
         this.tarefaList = new ArrayList<>();
     }
     
+    //metodos
     public void adicionarTarefa(String descricao){
         tarefaList.add(new Tarefa(descricao)); //como tarefaList é do tipo Tarefa, foi preciso instanciar uma Tarefa passando descrição.
     }
@@ -25,7 +26,7 @@ public class ListaTerefas {
                 tarefasParaRemover.add(t);
             }
         }
-
+        
         tarefaList.removeAll(tarefasParaRemover);
     }
 
@@ -37,6 +38,11 @@ public class ListaTerefas {
         System.out.println(tarefaList);
     }
 
+
+
+
+
+    
     public static void main(String[] args) {
         ListaTerefas listaTarefas = new ListaTerefas();
 
