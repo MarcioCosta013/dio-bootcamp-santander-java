@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "AgendaContatos",
+            "request": "launch",
+            "mainClass": "exercicios.collections.map.operacoesbasicas.AgendaContatos",
+            "projectName": "dio-bootcamp-santander-java_180e8da4"
+        },
+        {
+            "type": "java",
             "name": "CadastroProdutos",
             "request": "launch",
             "mainClass": "exercicios.collections.set.ordenacao.CadastroProdutos",
