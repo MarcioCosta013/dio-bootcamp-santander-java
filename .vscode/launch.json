@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "EstoqueProdutos",
+            "request": "launch",
+            "mainClass": "exercicios.collections.map.pesquisa.EstoqueProdutos",
+            "projectName": "dio-bootcamp-santander-java_180e8da4"
+        },
+        {
+            "type": "java",
             "name": "Dicionario",
             "request": "launch",
             "mainClass": "exercicios.collections.map.operacoesbasicas.Dicionario",
