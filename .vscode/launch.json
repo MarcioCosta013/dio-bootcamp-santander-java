@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "AgendaEventos",
+            "request": "launch",
+            "mainClass": "exercicios.collections.map.ordenacao.AgendaEventos",
+            "projectName": "dio-bootcamp-santander-java_180e8da4"
+        },
+        {
+            "type": "java",
             "name": "EstoqueProdutos",
             "request": "launch",
             "mainClass": "exercicios.collections.map.pesquisa.EstoqueProdutos",
