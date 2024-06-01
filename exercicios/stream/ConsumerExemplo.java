@@ -3,6 +3,7 @@ package exercicios.stream;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
+import java.util.function.Predicate;
 
 /**
  * Consumer<T>: Representa uma operação que aceita um argumento do tipo T e não retorna nenhum resultado. 
@@ -45,7 +46,7 @@ public class ConsumerExemplo {
             
          });
 
-        // Transformando o codigo acima com o Lambda: --------------
+        //----------------3° forma: Transformando o codigo acima com o Lambda: --------------
 
         numeros.forEach( n -> { //nesse caso dá para simplificar mais ainda tirando o ".stream()", e vai funcionar da mesma forma.
                 if(n % 2 == 0){
@@ -53,5 +54,21 @@ public class ConsumerExemplo {
                 }
             }
          );
+
+
+        //--------------------4° forma de escrever o mesmo codigo (com Predicate<T>) ---------------------------
+
+        numeros.stream().filter(new Predicate<Integer>() {
+            @Override
+            public boolean test(Integer n) {
+                return n % 2 == 0;
+            }
+        })
+        .forEach(System.out::println);
+
+        //--------------------5° forma de escrever o mesmo codigo (com Predicate<T>, e lambda) ---------------------------
+
+        numeros.stream().filter(n-> n % 2 == 0)
+        .forEach(System.out::println);
     }
 }

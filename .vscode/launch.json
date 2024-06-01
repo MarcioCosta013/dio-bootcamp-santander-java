@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PredicateExemplo",
+            "request": "launch",
+            "mainClass": "exercicios.stream.PredicateExemplo",
+            "projectName": "dio-bootcamp-santander-java_180e8da4"
+        },
+        {
+            "type": "java",
             "name": "FunctionExemplo",
             "request": "launch",
             "mainClass": "exercicios.stream.FunctionExemplo",
