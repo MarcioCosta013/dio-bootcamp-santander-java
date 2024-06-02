@@ -47,11 +47,21 @@ public class BinaryOperatorExemplo {
 
         // ------------------------ 3° Forma de usar(usando lambda)
         // --------------------------------------//
-        
+
         int resultado3 = numeros.stream()
                 .reduce(0, (n1, n2) -> n1 + n2); // "identity" seria uma variavel temporária dentro de um laço
 
         // Imprimir o resultado da soma
         System.out.println("A soma dos números é: " + resultado3);
+
+        // ------------------------ 4° Forma de usar(usando lambda e method reference)
+        // --------------------------------------//
+
+        int resultado4 = numeros.stream()
+                .reduce(0, Integer::sum); // "identity" seria uma variavel temporária dentro de um laço
+
+        // Imprimir o resultado da soma
+        System.out.println("A soma dos números é: " + resultado4);
+
     }
 }
