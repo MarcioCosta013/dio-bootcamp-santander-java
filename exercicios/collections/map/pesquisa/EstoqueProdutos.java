@@ -79,6 +79,7 @@ public class EstoqueProdutos {
     public Produto obterProdutoMaiorQuantidadeValorTotalNoEstoque() {
         Produto produtoMaiorQuantidadeValorNoEstoque = null;
         double maiorValorTotalProdutoEstoque = 0d;
+        
         if (!estoqueProdutoMap.isEmpty()) {
           for (Map.Entry<Long, Produto> entry : estoqueProdutoMap.entrySet()) {
             double valorProdutoEmEstoque = entry.getValue().getPreco() * entry.getValue().getQuantidade();

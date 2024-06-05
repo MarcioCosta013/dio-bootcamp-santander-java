@@ -3,7 +3,8 @@ import java.util.List;
 public class Banco {
 
 	private String nome;
-	private List<Conta> contas;
+	private List<Conta> contas; 
+	//TODO: uma lista(map) que armazene o nome do cliente e a conta dele.
 
 	public String getNome() {
 		return nome;
