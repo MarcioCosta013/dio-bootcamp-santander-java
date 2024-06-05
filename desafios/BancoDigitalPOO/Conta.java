@@ -1,19 +1,24 @@
+
 public abstract class Conta implements IConta {
 	
-	private static final int AGENCIA_PADRAO = 1;
-	private static int SEQUENCIAL = 1;
+    //Constantes
+	private static final int AGENCIA_PADRAO = 1; //o "final" é porque ele não pode ser alterado mais...
+	private static int SEQUENCIAL = 1; //Criado para funcionar como de fosse um Id em Banco de Dados e a cada conta ir imclementando.
 
+    //atributos
 	protected int agencia;
 	protected int numero;
 	protected double saldo;
 	protected Cliente cliente;
 
+    //Construtor
 	public Conta(Cliente cliente) {
 		this.agencia = Conta.AGENCIA_PADRAO;
-		this.numero = SEQUENCIAL++;
+		this.numero = SEQUENCIAL++; //Para inclementar a cada conta que for criada...
 		this.cliente = cliente;
 	}
 
+    //Metodos Especiais.
 	@Override
 	public void sacar(double valor) {
 		saldo -= valor;
@@ -30,6 +35,7 @@ public abstract class Conta implements IConta {
 		contaDestino.depositar(valor);
 	}
 
+    //Metodos
 	public int getAgencia() {
 		return agencia;
 	}

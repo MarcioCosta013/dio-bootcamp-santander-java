@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "dio-bootcamp-santander-java_180e8da4"
+        },
+        {
+            "type": "java",
             "name": "BinaryOperatorExemplo",
             "request": "launch",
             "mainClass": "exercicios.stream.BinaryOperatorExemplo",
