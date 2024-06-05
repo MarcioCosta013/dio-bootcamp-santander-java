@@ -1,25 +1,28 @@
 import java.time.LocalDate;
+import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
 
-        //Criando um cliente
-		Cliente marcio = new Cliente("Marcio", LocalDate.of(1999, 5, 20));
-		
-		
-        //conta corrente
-		IConta cc = new ContaCorrente(marcio);
 
-		
-        //conta poupança
-		IConta poupanca = new ContaPoupanca(marcio);
+		System.out.println("======= Bem - Vindo ao E-banco ============ \n");
+		System.out.println("Escolha a opção desejada: \n 1- Fazer Movimentacoes; \n 2- Adicionar Cliente;");
+		try {
+			int opcao = scanner.nextInt();
 
-		cc.depositar(100);
-		cc.transferir(100, poupanca);
-		
-		cc.imprimirExtrato();
-		poupanca.imprimirExtrato();
+			switch (opcao) {
+				case 1:
+					//TODO: Movimentacoes
+					
+				case 2:
+					//TODO: Adicionar Cliente
+					
+			}
+		} catch (Exception e) {
+			System.out.println("Erro digite somente numeros inteiros!");
+		}
 	}
 
 }

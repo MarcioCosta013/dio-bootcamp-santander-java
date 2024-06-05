@@ -1,10 +1,14 @@
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Banco {
 
 	private String nome;
-	private List<Conta> contas; 
+	private Map<Conta, Cliente> contas; 
 	//TODO: uma lista(map) que armazene o nome do cliente e a conta dele.
+
+	
 
 	public String getNome() {
 		return nome;
