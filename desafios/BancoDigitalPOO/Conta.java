@@ -1,4 +1,6 @@
 
+
+
 public abstract class Conta implements IConta {
 	
     //Constantes
@@ -10,12 +12,15 @@ public abstract class Conta implements IConta {
 	protected int numero;
 	protected double saldo;
 	protected Cliente cliente;
+	private Banco banco;
 
     //Construtor
 	public Conta(Cliente cliente) {
 		this.agencia = Conta.AGENCIA_PADRAO;
 		this.numero = SEQUENCIAL++; //Para inclementar a cada conta que for criada...
 		this.cliente = cliente;
+		 
+		banco.adicionarConta(numero, cliente.getNome());
 	}
 
     //Metodos Especiais.

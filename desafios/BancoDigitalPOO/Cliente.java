@@ -5,15 +5,13 @@ public class Cliente {
 	//Atributos
 	private String nome;
 	private LocalDate dataNascimento;
-	private String login;
-	private long senha;
+	
 
 	//Contrutor
-	public Cliente(String nome, LocalDate dataNascimento, String login, long senha) {
+	public Cliente(String nome, LocalDate dataNascimento) {
         this.nome = nome;
         this.dataNascimento = dataNascimento;
-		this.login = login;
-		this.senha = senha;
+		
     }
 
 	//Metodos especiais
@@ -39,22 +37,6 @@ public class Cliente {
     public String toString() {
         return "Cliente [nome=" + nome + ", dataNascimento=" + dataNascimento + "]";
     }
-
-	public String getLogin() {
-		return login;
-	}
-
-	public void setLogin(String login) {
-		this.login = login;
-	}
-
-	public long getSenha() {
-		return senha;
-	}
-
-	public void setSenha(long senha) {
-		this.senha = senha;
-	}
 
 	
 
