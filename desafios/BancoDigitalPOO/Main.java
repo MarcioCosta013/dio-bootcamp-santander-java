@@ -9,14 +9,14 @@ public class Main {
 		
 
 
-		System.out.println("======= Bem - Vindo ao E-banco ============ \n");
+		System.out.println("======= Bem-Vindo ao E-banco ============ \n");
 		System.out.println("Escolha a opção desejada: \n 1- Fazer Movimentacoes; \n 2- Adicionar Cliente;");
 		try {
 			int opcao = scanner.nextInt();
 
 			switch (opcao) {
 				case 1:
-					//TODO: Movimentacoes
+					//Movimentacoes
 					System.out.println("Escolha a opção desejada: \n 1- Sacar; \n 2- Depositar; \n 3- Transferir; \n 4- Imprimir Saldo");
 					try {
 						int opcao2 = scanner.nextInt();
