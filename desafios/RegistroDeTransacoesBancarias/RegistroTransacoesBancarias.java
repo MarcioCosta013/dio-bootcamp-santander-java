@@ -40,6 +40,14 @@ public class RegistroTransacoesBancarias {
         }
 
         // TODO: Exibir o saldo final e a lista de transações conforme a tabela de Exemplos.
+        System.out.println("Saldo: " + saldo);
+        System.out.println("Transacoes:");
+        if(quantidadeTransacoes != 0){
+            for(int i=0; i <= quantidadeTransacoes--; i++){
+                System.out.println(String.format((i+1) + ". " + transacoes.get(i)));
+            }
+        }
+        
 
         // Fechar o scanner para evitar vazamentos de recursos
         scanner.close();
