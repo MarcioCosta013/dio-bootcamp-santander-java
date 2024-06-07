@@ -20,21 +20,23 @@ public class RegistroTransacoesComStream {
             char tipoTransacao = scanner.next().charAt(0);
             double valorTransacao = scanner.nextDouble();
 
-            // TODO: Criar uma nova transação e adicioná-la à lista de transações
-            Transacao transacao = null;
+            //Criar uma nova transação e adicioná-la à lista de transações
+            Transacao transacao = new Transacao(tipoTransacao, valorTransacao);
 
             // Verifica e atualiza o saldo da conta com base no tipo de transação
-            if (transacao.getTipo().toUpperCase() == 'D') {
+            if (transacao.getTipo() == 'd') {
                 saldo += valorTransacao;
-            } else if (transacao.getTipo().toUpperCase() == 'S') {
+                transacoes.add(transacao);
+            } else if (transacao.getTipo() == 's') {
                 saldo -= valorTransacao;
+                transacoes.add(transacao);
             }
         }
 
         System.out.println("\nSaldo : " + saldo);
-        System.out.println("\nTransacoes:");
+        System.out.println("Transacoes:");
         transacoes.stream()
-                .map(transacao -> "TODO: Formatar a Saída (tipo e valor) de acordo com os Exemplos.")
+                .map(transacao -> transacao.getTipo() + " de " + transacao.getValor())
                 .collect(Collectors.toList())
                 .forEach(System.out::println);
 
@@ -42,4 +44,3 @@ public class RegistroTransacoesComStream {
         scanner.close();
     }
 }
-
