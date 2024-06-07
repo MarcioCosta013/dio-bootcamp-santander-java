@@ -15,7 +15,7 @@ public class OperacoesBancarias {
         //System.out.print("\nOpção escolhida: ");
         // Loop infinito para manter o programa em execução até que o usuário decida sair
         while (loopWhile) { 
-            int continuar = 0;
+            //int continuar = 0;
 
             
             try {
@@ -77,7 +77,7 @@ public class OperacoesBancarias {
             }
          
         }
-        
+        scanner.close();
     }
 
 }
