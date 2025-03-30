@@ -1,4 +1,12 @@
+[JAVA_BADGE]:https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white
+
+[SPRING_BADGE]: https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white
+
 # Repositório do Bootcamp Back-end Java do Santander Bootcamp 2024
+
+![java][JAVA_BADGE]
+![spring][SPRING_BADGE]
+
 #### Trilha de Back-end Java do Santander Bootcamp 2024, desde os primeiros passos com Java partindo da sintaxe básica até a implementação de uma API utilizando Spring.
 
 ##### Grade completa:
