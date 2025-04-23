@@ -1,0 +1,11 @@
+com\marcio\domain\repository\UsuarioRepository.class
+com\marcio\domain\model\Conta.class
+com\marcio\domain\model\Noticias.class
+com\marcio\domain\service\UsuarioService.class
+com\marcio\domain\model\Feature.class
+com\marcio\domain\model\Usuario.class
+com\marcio\domain\model\BaseItens.class
+com\marcio\Application.class
+com\marcio\domain\model\Cartao.class
+com\marcio\domain\controller\UsuarioController.class
+com\marcio\domain\service\impl\UsuarioServiceImpl.class

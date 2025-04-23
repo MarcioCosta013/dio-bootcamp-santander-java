@@ -1,0 +1,5 @@
+# Created at 2024-07-04T01:26:20.191
+Boot Manifest-JAR contains absolute paths in classpath 'd:\Arquivos\dio-java-repositorio\dio-bootcamp-santander-java\desafios\lab-restfulApi\java-springboot\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+
